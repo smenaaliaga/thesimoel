@@ -59,23 +59,26 @@
               <div class="container">
                 
                
-                <div class="collapse navbar-collapse" id="navbarMenu">
-                  <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="/">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/about">Sobre nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="about.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contacto</a>
-                    </li>
-                  </ul>
+                <div class="collapse navbar-collapse" id="navbar">
+                  
+                    <ul class="nav navbar-nav mx-auto">
+                        <li class="nav-item">
+                        <a class="nav-link {% if home %}{{ home }}{% endif %}" href="/">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link {% if about %}{{ about }}{% endif %}" href="/about">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="about.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
                   
                 </div>
+
+
               </div
             </nav>
         </header>
@@ -281,5 +284,7 @@
     <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
     
     <script src="{% static 'js/main.js' %}"></script>
+
     </body>
 </html>
+

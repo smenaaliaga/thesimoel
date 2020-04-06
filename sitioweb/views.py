@@ -3,7 +3,7 @@ from django.urls import path
 from django.shortcuts import render, HttpResponse, Http404
 
 def home(request) :
-    return render(request, "home.html", {'title' : 'Modelos disponibles'})
+    return render(request, "home.html", {'title' : 'Modelos disponibles', 'home' : 'active'})
 
 def about(request) :
-    return render(request, "about.html", {'title' : ''})
+    return render(request, "about.html", {'title' : '', 'about' : 'active'})
