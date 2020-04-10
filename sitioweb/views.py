@@ -7,3 +7,6 @@ def home(request) :
 
 def about(request) :
     return render(request, "about.html", {'title' : '', 'about' : 'active'})
+
+def contact(request) :
+    return render(request, "contact.html", {'title' : '', 'contact' : 'active'})
